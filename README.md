@@ -1,1 +1,1 @@
-# eslint-config-wolox-typescript-ios
+# eslint-config-wolox-react-typescript
