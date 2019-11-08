@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-wolox-typescript",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Wolox's ESLint typescript configuration for React projects ",
   "main": "index.js",
   "repository": {
