@@ -31,32 +31,6 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
-    '@typescript-eslint/type-annotation-spacing': 'error',
-    'import/order': [
-      'error', {
-        'newlines-between': 'always',
-        groups: ['builtin', 'external', 'unknown', 'parent', 'internal', 'sibling', 'index']
-      }
-    ]
-  },
-  settings: {
-    react: {
-      version: 'detect'
-    },
-    'import/resolver': {
-      'babel-module': {
-        root: ['./src'],
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        alias: {
-          '~components': './src/app/components',
-          '~screens': './src/app/screens',
-          '~config': './src/config',
-          '~constants': './src/constants',
-          '~redux': './src/redux',
-          '~services': './src/services',
-          '~utils': './src/utils'
-        }
-      }
-    }
+    '@typescript-eslint/type-annotation-spacing': 'error'
   },
 };
