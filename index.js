@@ -26,9 +26,13 @@ module.exports = {
         format: ['camelCase', 'UPPER_CASE']
       },
       {
-        selector: 'function',
-        format: ['PascalCase'],
+        selector: ['function', 'interface', 'class', 'typeAlias'],
+        format: ['PascalCase']
       },
+      {
+        selector: 'enum',
+        format: ['UPPER_CASE']
+      }
     ],
     '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/member-delimiter-style': 'error',
