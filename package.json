@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-wolox-typescript",
+  "name": "@wolox/eslint-config-typescript",
   "version": "1.1.0",
   "description": "Wolox's ESLint typescript configuration for React projects ",
   "main": "index.js",
@@ -23,7 +23,7 @@
     "eslint": "6.3.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-babel": "5.3.0",
-    "@typescript-eslint": "4.7.0",
-    "@typescript-eslint/parser": "4.7.0"
+    "@typescript-eslint/parser": "4.7.0",
+    "@typescript-eslint/eslint-plugin": "4.7.0"
   }
 }
