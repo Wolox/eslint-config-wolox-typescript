@@ -1,1 +1,1 @@
-# eslint-config-wolox-typescript
+# Wolox Typescript ESLint Configuration
