@@ -11,6 +11,8 @@ module.exports = {
     'no-empty-function': 'off',
     'no-unused-vars': 'off',
     'no-use-before-define': 'off',
+    'no-shadow': 'off',
+    'no-undef': 'off',
 
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/ban-ts-comment': 'error',
@@ -19,18 +21,18 @@ module.exports = {
       'error',
       {
         selector: 'default',
-        format: ['camelCase'],
+        format: ['camelCase']
       },
       {
         selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE']
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase']
       },
       {
-        selector: ['function', 'interface', 'class', 'typeAlias'],
+        selector: ['function', 'typeLike'],
         format: ['PascalCase']
       },
       {
-        selector: 'enum',
+        selector: 'enumMember',
         format: ['UPPER_CASE']
       }
     ],
@@ -48,6 +50,7 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
-    '@typescript-eslint/type-annotation-spacing': 'error'
+    '@typescript-eslint/type-annotation-spacing': 'error',
+    '@typescript-eslint/no-shadow': 'error'
   },
 };
