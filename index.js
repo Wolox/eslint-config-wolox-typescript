@@ -4,6 +4,9 @@ module.exports = {
   extends: ['plugin:import/typescript'],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
+  settings: {
+    'import/resolver': 'typescript'
+  },
   rules: {
     'spaced-comment': ['error', 'always', { 'markers': ['/'] }],
     'camelcase': 'off',
@@ -13,7 +16,6 @@ module.exports = {
     'no-use-before-define': 'off',
     'no-shadow': 'off',
     'no-undef': 'off',
-
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/ban-ts-comment': 'error',
     '@typescript-eslint/ban-types': 'error',
@@ -24,11 +26,16 @@ module.exports = {
         format: ['camelCase']
       },
       {
-        selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE', 'PascalCase']
+        selector: 'variableLike',
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+        leadingUnderscore: 'allow'
       },
       {
-        selector: ['function', 'typeLike'],
+        selector: 'function',
+        format: ['camelCase', 'PascalCase']
+      },
+      {
+        selector: 'typeLike',
         format: ['PascalCase']
       },
       {
