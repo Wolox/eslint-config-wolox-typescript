@@ -7,6 +7,9 @@ module.exports = {
   settings: {
     'import/resolver': 'typescript'
   },
+  parserOptions: {
+    project: './tsconfig.json'
+  },
   rules: {
     'spaced-comment': ['error', 'always', { 'markers': ['/'] }],
     'camelcase': 'off',
