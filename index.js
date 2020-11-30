@@ -31,6 +31,11 @@ module.exports = {
         leadingUnderscore: 'allow'
       },
       {
+        selector: 'variable',
+        format: ['camelCase', 'PascalCase'],
+        types: ['function']
+      },
+      {
         selector: 'function',
         format: ['camelCase', 'PascalCase']
       },
