@@ -35,7 +35,7 @@ module.exports = {
       },
       {
         selector: 'variable',
-        format: ['camelCase', 'PascalCase'],
+        format: ['camelCase'],
         types: ['function']
       },
       {
